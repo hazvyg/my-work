@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>AI Point Generator</title>
 </head>
@@ -13,16 +14,17 @@
 
     <main>
 
-        <form>
+        <form id="poem-generator">
             <input type="text" placeholder="Enter contents of the poem" autofocus
              required 
-             autocomplete="off">
+             autocomplete="off"
+             class="instructions"/>
             
             <input type="submit">
 
         </form>
 
-        <div>
+        <div class="poem" id="poem">
 
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi deleniti esse repellat quibusdam possimus omnis incidunt quisquam magni quod dolore, architecto sapiente quam exercitationem aliquid eius minima, eos,
            a libero.  
